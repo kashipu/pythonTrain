@@ -14,5 +14,3 @@ def sumarOperaciones(x):
     return print(resultado)
 #Invoco Función
 sumarOperaciones(t)
-
-
