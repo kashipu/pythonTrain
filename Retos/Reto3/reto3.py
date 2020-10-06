@@ -50,6 +50,12 @@
 # print("Gracias por tu compra")
 
 
+#Información Cabeza de la tirilla
+infoCabezaFactura = """Centro Comercial Unaleño
+Compra más y Gasta Menos
+NIT: 899.999.063"""
+
+
 
 
 
@@ -63,7 +69,8 @@ while i == "1":
         producto = x.split("&")
         i = producto[0]
         if i == "2":
-            print(listadoProductos)
+            cedula = producto[1]
+            x = input()
         elif i == "3":
             print("Salir")
         else:
