@@ -1,9 +1,0 @@
-{
-    "python.testing.pytestArgs": [
-        "ejercicio10"
-    ],
-    "python.testing.unittestEnabled": false,
-    "python.testing.nosetestsEnabled": false,
-    "python.testing.pytestEnabled": true,
-    "python.pythonPath": "C:\\Users\\WILLIAM\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe"
-}
