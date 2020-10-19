@@ -10,7 +10,8 @@ from requests.models import Response
 
 # Request 
     #Petición a URL
-URL = requests.get("https://raw.githubusercontent.com/arleserp/MinTIC2022/master/json/comprassmall.json")
+REMOTEURL = input()
+URL = requests.get(REMOTEURL)
 purchaseData = json.loads(URL.text)
 i = 0
 # Variables Globales
@@ -56,11 +57,9 @@ def calculoPrecioTotal(x, i):
 def descuento(x):
     if x > 150000 and x <= 300000:
         d = math.ceil(x * 0.1)
-        print(d)
         return d
     elif x > 300000 and x <= 700000:
         d = math.floor(x * 0.15)
-        print(d)
         return d
     elif x > 700000:
         d = math.ceil(x * 0.2)
